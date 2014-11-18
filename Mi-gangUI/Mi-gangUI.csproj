@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44E78171-28B4-4835-AF15-476EBB436CBA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mi_gangUI</RootNamespace>
+    <AssemblyName>Mi-gangUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FineUI">
+      <HintPath>lib\FineUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BusinessManage\AnnoucementDetail.aspx" />
+    <Content Include="BusinessManage\AnnounceManage.aspx" />
+    <Content Include="BusinessManage\CommdityManage.aspx" />
+    <Content Include="BusinessManage\LevelDetail.aspx" />
+    <Content Include="BusinessManage\MemberAddress.aspx" />
+    <Content Include="BusinessManage\MemberDetail.aspx" />
+    <Content Include="BusinessManage\MemberLevelManage.aspx" />
+    <Content Include="BusinessManage\MemberManage.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="LogManage\CreditLog.aspx" />
+    <Content Include="LogManage\CreditsExchangeLog.aspx" />
+    <Content Include="LogManage\ErrorLog.aspx" />
+    <Content Include="LogManage\PointsLog.aspx" />
+    <Content Include="LogManage\PurchaseLog.aspx" />
+    <Content Include="LogManage\SystemLog.aspx" />
+    <Content Include="SystemManage\ButtonDetail.aspx" />
+    <Content Include="SystemManage\ButtonManage.aspx" />
+    <Content Include="SystemManage\CommonDataManage.aspx" />
+    <Content Include="SystemManage\MenuDetail.aspx" />
+    <Content Include="SystemManage\MenuManage.aspx" />
+    <Content Include="SystemManage\MenuTree.aspx" />
+    <Content Include="SystemManage\ModifyPassword.aspx" />
+    <Content Include="SystemManage\RoleControlManage.aspx" />
+    <Content Include="SystemManage\RoleDetail.aspx" />
+    <Content Include="SystemManage\RoleManage.aspx" />
+    <Content Include="SystemManage\CommonSettingsDetail.aspx" />
+    <Content Include="SystemManage\UserDetail.aspx" />
+    <Content Include="SystemManage\UserManage.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessManage\AnnoucementDetail.aspx.cs">
+      <DependentUpon>AnnoucementDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessManage\AnnoucementDetail.aspx.designer.cs">
+      <DependentUpon>AnnoucementDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManage\AnnounceManage.aspx.cs">
+      <DependentUpon>AnnounceManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessManage\AnnounceManage.aspx.designer.cs">
+      <DependentUpon>AnnounceManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManage\CommdityManage.aspx.cs">
+      <DependentUpon>CommdityManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessManage\CommdityManage.aspx.designer.cs">
+      <DependentUpon>CommdityManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManage\LevelDetail.aspx.cs">
+      <DependentUpon>LevelDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessManage\LevelDetail.aspx.designer.cs">
+      <DependentUpon>LevelDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManage\MemberAddress.aspx.cs">
+      <DependentUpon>MemberAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessManage\MemberAddress.aspx.designer.cs">
+      <DependentUpon>MemberAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManage\MemberDetail.aspx.cs">
+      <DependentUpon>MemberDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessManage\MemberDetail.aspx.designer.cs">
+      <DependentUpon>MemberDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManage\MemberLevelManage.aspx.cs">
+      <DependentUpon>MemberLevelManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessManage\MemberLevelManage.aspx.designer.cs">
+      <DependentUpon>MemberLevelManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessManage\MemberManage.aspx.cs">
+      <DependentUpon>MemberManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessManage\MemberManage.aspx.designer.cs">
+      <DependentUpon>MemberManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="captcha\captcha.ashx.cs">
+      <DependentUpon>captcha.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="captcha\CaptchaImage.cs" />
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogManage\CreditLog.aspx.cs">
+      <DependentUpon>CreditLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogManage\CreditLog.aspx.designer.cs">
+      <DependentUpon>CreditLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogManage\CreditsExchangeLog.aspx.cs">
+      <DependentUpon>CreditsExchangeLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogManage\CreditsExchangeLog.aspx.designer.cs">
+      <DependentUpon>CreditsExchangeLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogManage\ErrorLog.aspx.cs">
+      <DependentUpon>ErrorLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogManage\ErrorLog.aspx.designer.cs">
+      <DependentUpon>ErrorLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogManage\PointsLog.aspx.cs">
+      <DependentUpon>PointsLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogManage\PointsLog.aspx.designer.cs">
+      <DependentUpon>PointsLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogManage\PurchaseLog.aspx.cs">
+      <DependentUpon>PurchaseLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogManage\PurchaseLog.aspx.designer.cs">
+      <DependentUpon>PurchaseLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogManage\SystemLog.aspx.cs">
+      <DependentUpon>SystemLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogManage\SystemLog.aspx.designer.cs">
+      <DependentUpon>SystemLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemManage\ButtonDetail.aspx.cs">
+      <DependentUpon>ButtonDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ButtonDetail.aspx.designer.cs">
+      <DependentUpon>ButtonDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ButtonManage.aspx.cs">
+      <DependentUpon>ButtonManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ButtonManage.aspx.designer.cs">
+      <DependentUpon>ButtonManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\CommonDataManage.aspx.cs">
+      <DependentUpon>CommonDataManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\CommonDataManage.aspx.designer.cs">
+      <DependentUpon>CommonDataManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\MenuDetail.aspx.cs">
+      <DependentUpon>MenuDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\MenuDetail.aspx.designer.cs">
+      <DependentUpon>MenuDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\MenuManage.aspx.cs">
+      <DependentUpon>MenuManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\MenuManage.aspx.designer.cs">
+      <DependentUpon>MenuManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\MenuTree.aspx.cs">
+      <DependentUpon>MenuTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\MenuTree.aspx.designer.cs">
+      <DependentUpon>MenuTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ModifyPassword.aspx.cs">
+      <DependentUpon>ModifyPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ModifyPassword.aspx.designer.cs">
+      <DependentUpon>ModifyPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\RoleControlManage.aspx.cs">
+      <DependentUpon>RoleControlManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\RoleControlManage.aspx.designer.cs">
+      <DependentUpon>RoleControlManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\RoleDetail.aspx.cs">
+      <DependentUpon>RoleDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\RoleDetail.aspx.designer.cs">
+      <DependentUpon>RoleDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\RoleManage.aspx.cs">
+      <DependentUpon>RoleManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\RoleManage.aspx.designer.cs">
+      <DependentUpon>RoleManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\CommonSettingsDetail.aspx.cs">
+      <DependentUpon>CommonSettingsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\CommonSettingsDetail.aspx.designer.cs">
+      <DependentUpon>CommonSettingsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\UserDetail.aspx.cs">
+      <DependentUpon>UserDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\UserDetail.aspx.designer.cs">
+      <DependentUpon>UserDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\UserManage.aspx.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManage\UserManage.aspx.designer.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="captcha\captcha.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mi-gangBusiness\Mi-gangBusiness.csproj">
+      <Project>{1323c070-6008-4471-ac4f-3047095417c0}</Project>
+      <Name>Mi-gangBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mi-gangEntity\Mi-gangEntity.csproj">
+      <Project>{753a8e3f-aa5c-456f-a108-6fbde81eaacb}</Project>
+      <Name>Mi-gangEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2913/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
